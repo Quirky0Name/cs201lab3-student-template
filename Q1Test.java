@@ -105,7 +105,7 @@ public class Q1Test {
                for (int v : pre) {
                     root = insert(root, v);
                }
-               
+
                List<Integer> inList = new ArrayList<>();
                List<Integer> preList = new ArrayList<>();
                List<Integer> postList = new ArrayList<>();
@@ -189,5 +189,13 @@ public class Q1Test {
           postorder(n.left, out);
           postorder(n.right, out);
           out.add(n.val);
+     }
+
+     public static class Node {
+          int val;
+          Node left, right;
+          Node(int val) { 
+               this.val = val;
+          }
      }
 }
